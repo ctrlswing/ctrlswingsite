@@ -1,21 +1,21 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
-import { unstable_ViewTransition as ViewTransition } from 'react';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { unstable_ViewTransition as ViewTransition } from "react";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.com'),
+  metadataBase: new URL("https://ctrlswing.com"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: "ctrlswing",
+    template: "%s | ctrlswing",
   },
-  description: 'Frontend developer, optimist, community builder.',
+  description: "Personal blog by jackson",
 };
 
 export default function RootLayout({
@@ -39,12 +39,7 @@ export default function RootLayout({
 }
 
 function Footer() {
-  const links = [
-    { name: '@leerob', url: 'https://x.com/leeerob' },
-    { name: 'youtube', url: 'https://www.youtube.com/@leerob' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/leeerob' },
-    { name: 'github', url: 'https://github.com/leerob' },
-  ];
+  const links = [{ name: "github", url: "https://github.com/jackson" }];
 
   return (
     <footer className="mt-12 text-center">
