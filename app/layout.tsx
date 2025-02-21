@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { unstable_ViewTransition as ViewTransition } from "react";
+import EmailOptIn from "./components/EmailOptIn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +43,8 @@ function Footer() {
   const links = [{ name: "github", url: "https://github.com/jackson" }];
 
   return (
-    <footer className="mt-12 text-center">
+    <footer className="mt-12 space-y-8">
+      <EmailOptIn />
       <div className="flex justify-center space-x-4 tracking-tight">
         {links.map((link) => (
           <a
