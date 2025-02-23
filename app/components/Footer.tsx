@@ -1,11 +1,19 @@
-import EmailOptIn from "./EmailOptIn";
+import Link from "next/link";
 
 export function Footer() {
   const links = [{ name: "github", url: "https://github.com/jackson" }];
 
   return (
     <footer className="mt-12 space-y-8">
-      <EmailOptIn />
+      <div className="text-left">
+        <Link
+          href="/subscribe"
+          className="text-blue-500 hover:text-blue-700 dark:text-gray-400 hover:dark:text-gray-300 dark:underline dark:underline-offset-2 dark:decoration-gray-800"
+        >
+          click me 
+        </Link> 
+      </div>
+
       <div className="flex justify-center space-x-4 tracking-tight">
         {links.map((link) => (
           <a
