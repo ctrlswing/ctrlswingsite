@@ -1,10 +1,15 @@
+import { Tags } from "@/app/components/Tags";
+
 export const metadata = {
   title: "My First Article",
   description: "This is my first article on my new blog",
   date: "2024-02-21",
+  tags: ["blog", "intro", "markdown"]
 };
 
 # my first article
+
+<Tags tags={metadata.tags} className="mt-2 mb-8" />
 
 ## intro
 

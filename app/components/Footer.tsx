@@ -1,7 +1,10 @@
 import Link from "next/link";
 
 export function Footer() {
-  const links = [{ name: "github", url: "https://github.com/jackson" }];
+  const links = [
+    { name: "x", url: "https://x.com/ctrlswing" },
+    { name: "github", url: "https://github.com/jackson" }
+  ];
 
   return (
     <footer className="mt-12 space-y-8">
