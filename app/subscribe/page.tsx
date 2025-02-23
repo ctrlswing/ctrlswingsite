@@ -7,7 +7,7 @@ export default function SubscribePage() {
       <div className="max-w-md w-full space-y-8">
         <div className="text-left">
           <h1>
-            stay updated
+            subscribe
           </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
             Every month I share one thought, one output, and one question.
