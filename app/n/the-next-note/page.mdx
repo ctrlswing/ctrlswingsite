@@ -1,4 +1,6 @@
 import { Tags } from "@/app/components/Tags";
+import { BackButton } from "@/app/components/BackButton";
+import { ArticleHeader } from "@/app/components/ArticleHeader";
 
 export const metadata = {
   title: "the next note",
@@ -7,10 +9,8 @@ export const metadata = {
   tags: ["music", "learning"]
 };
 
-# the next note
-
-<Tags tags={metadata.tags} className="mt-2 mb-8" />
-
+<ArticleHeader title="the next note" date={metadata.date} />
+<Tags tags={metadata.tags} className="mb-8" />
 
 i spent weeks chasing perfect guitar dynamics. loudest possible to softest possible. stuck on absolutes.
 
@@ -18,4 +18,6 @@ until i learned to listen for the next note. each touch a whisper quieter than t
 
 miles davis knew. when his band hit wrong notes, he'd weave them into right ones. no absolutes in jazz. only moments to build from.
 
-progress lives in the space between now and next. absolutes exist in minds. reality flows note to note, moment to moment.
+progress lives in the space between now and next. absolutes exist in minds. reality flows note to note.
+
+<BackButton />
